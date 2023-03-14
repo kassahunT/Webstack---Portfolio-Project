@@ -1,0 +1,71 @@
+
+###
+POST http://localhost:3003/user/signup
+Content-Type: application/json
+
+{
+    "name":"kass",  
+    "email":"kass12@gmail.com",
+    "password":"1234",
+    "role":"user"
+}
+###
+POST http://localhost:3003/user/login
+Content-Type: application/json
+
+{
+    "email":"kass12@gmail.com",
+    "password":"1234"
+}
+###
+POST http://localhost:3003/trip/
+Content-Type: application/json
+
+{
+    "source":"bole",
+    "destination":"jemo",
+    "date":"2022,12,31",
+    "time":"7"
+}
+Authorization:Bearer 
+###
+GET http://localhost:3003/trip/
+
+###
+GET http://localhost:3003/trip/63a6a3699748f02ee9f90fe6
+
+###
+DELETE http://localhost:3003/trip/id
+
+###
+POST http://localhost:3003/bus/
+Content-Type: application/json
+
+{
+    
+}
+###
+GET http://localhost:3003/bus/
+
+###
+GET http://localhost:3003/bus/id
+
+###
+DELETE http://localhost:3003/bus/id
+
+###
+POST http://localhost:3003/booking/
+Content-Type: application/json
+
+{
+    
+}
+###
+GET http://localhost:3003/booking/
+
+###
+GET http://localhost:3003/booking/id
+
+
+###
+DELETE http://localhost:3003/booking/id
